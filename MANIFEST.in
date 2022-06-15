@@ -1,0 +1,32 @@
+include LICENSE.txt
+include README.rst
+
+graft MetaWear-SDK-Cpp
+prune MetaWear-SDK-Cpp/bindings/swift
+prune MetaWear-SDK-Cpp/cppdocs
+prune MetaWear-SDK-Cpp/build
+prune MetaWear-SDK-Cpp/Debug
+prune MetaWear-SDK-Cpp/Release
+prune MetaWear-SDK-Cpp/x64
+prune MetaWear-SDK-Cpp/c-binding-generator
+prune MetaWear-SDK-Cpp/test
+prune MetaWear-SDK-Cpp/.git
+
+graft mbientlab
+recursive-exclude mbientlab/metawear cbindings.py
+
+global-exclude *.git
+global-exclude *.gitmodules
+global-exclude *.gitignore
+global-exclude __pycache__
+global-exclude *.py[co]
+global-exclude *.d
+global-exclude *.o
+global-exclude *.so*
+global-exclude *.exp
+global-exclude *.iobj
+global-exclude *.ipdb
+global-exclude *.lib
+global-exclude *.pdb
+global-exclude *.tar
+global-exclude *.a
